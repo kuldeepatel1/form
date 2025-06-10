@@ -20,8 +20,8 @@ function Effect(){
     <Router>
       <Routes>
         
-        <Route path="/" element={<Login/>} />
-        <Route path="/Register" element={<Register />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/" element={<Register />} />
         <Route path="/home" element={<Home/>} />
         <Route path="/dituser" element={<EditUser/>} />
       </Routes>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 function Register() {
   const [form, setForm] = useState({ username: '', email: '', password: '' });
   const navigate = useNavigate();
@@ -58,6 +58,12 @@ function Register() {
         >
           Register
         </button>
+        <p className="text-center mt-6 text-black/80 text-sm">
+      if you login to
+      <Link to="/login" className="ml-1 text-black font-semibold underline hover:text-purple-200">
+        click
+      </Link>
+    </p>
       </form>
     </div>
 
